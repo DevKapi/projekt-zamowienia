@@ -29,9 +29,7 @@ Two independent modules, each paired with a `test_*.py` unittest file:
 ## Known state
 
 `test_prog_100` and `test_prog_500` currently **fail**: the tests expect the discount to
-apply *at* the threshold, but `oblicz_rabat` uses strict `>` (`kwota > prog`). This is the
-inherited state from commit `baa723c` — decide with the user whether the tests or the
-boundary condition is authoritative before "fixing" either side. This is known issues but its not fixed yet.
+apply *at* the threshold, but `oblicz_rabat` uses strict `>` (`kwota > prog`).
 
 ## Business's decision
 znizki powinny dzialac na wartosci rowne dla danego progu czyli jesli jest wartosc 500 to ta wartosc powinna wpadac w prog 500 a nie w 100, jesli wartosc jest rowna 100 to prog powinien ja lappac do 100 a nie usuwac znizke.
