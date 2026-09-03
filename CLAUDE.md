@@ -27,9 +27,8 @@ Two independent modules, each paired with a `test_*.py` unittest file:
   exceeds. `cena_po_rabacie` applies it and rounds to 2 decimals.
 
 ## Known state
-
-`test_prog_100` and `test_prog_500` currently **fail**: the tests expect the discount to
-apply *at* the threshold, but `oblicz_rabat` uses strict `>` (`kwota > prog`).
+Wszystkie testy przechodzą (11/11).
+Błąd graniczny progów (`>` zamiast `>=`) naprawiony w commicie 31ee848.
 
 ## Business's decision
 znizki powinny dzialac na wartosci rowne dla danego progu czyli jesli jest wartosc 500 to ta wartosc powinna wpadac w prog 500 a nie w 100, jesli wartosc jest rowna 100 to prog powinien ja lappac do 100 a nie usuwac znizke.
