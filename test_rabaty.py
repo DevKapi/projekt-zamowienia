@@ -18,6 +18,9 @@ class TestRabaty(unittest.TestCase):
     def test_cena_po_rabacie(self):
         self.assertEqual(cena_po_rabacie(200), 196.0)
 
+    def test_cena_z_groszami(self):
+        self.assertEqual(cena_po_rabacie(101), 98.98)
+
     def test_prog_1000(self):
         self.assertEqual(oblicz_rabat(1000), 0.10)
 
